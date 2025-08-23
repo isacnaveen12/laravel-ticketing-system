@@ -1,0 +1,6 @@
+// Basic CSS file for Vite
+@import 'bootstrap';
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
