@@ -31,7 +31,7 @@ class TicketController extends Controller
      */
     public function index(Request $request)
     {
-        $query = Auth::user()->tickets()->with(['category']);
+        $query = Auth::user()->tickets()->with(['category'])->withCount('replies');
 
         // Apply filters
         if ($request->filled('status')) {
